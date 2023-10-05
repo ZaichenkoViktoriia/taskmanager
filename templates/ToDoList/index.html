@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+
+  <div class="index-top">
+    <h1 style="color: #3D9FC3; margin-top: 20px;">Welcome here</h1>
+  </div>
+
+  <div class="tiles">
+    <a class="tile" href="{% url "tag-list" %}">
+    <a class="tile" href="{% url "index" %}"></a>
+  </div>
+  {% for task in task_list %}
+    <ul>
+
+  </ul>
+  {% endfor %}
+{% endblock %}
